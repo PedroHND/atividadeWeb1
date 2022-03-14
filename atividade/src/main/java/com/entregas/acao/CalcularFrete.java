@@ -81,6 +81,8 @@ public class CalcularFrete implements Acao {
 			p.getFrete();
 		}
 		
+		pDao.atualizar(p);
+		
 		sessao.setAttribute("pedidoUsuario", p);
 		sessao.setAttribute("estadoEntrega", est);
 		
